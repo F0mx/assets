@@ -1203,6 +1203,12 @@
 	rendermode(integer) : "rendermode" : 4
 	renderamt(integer) : "renderamt" : 255
 	spawnflags(Flags) = [ 1 : "Start Hidden" : 0 ]
+	// VHLT generates clip nodes for func_illusionary by default unless this field is added and set to 1.
+	zhlt_noclip(choices) : "Passable" : "1" =
+	[
+		"": "No"
+		1: "Yes"
+	]
 ]
 
 //@PointClass = func_illusionary2 : "Static model"  
